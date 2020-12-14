@@ -1,0 +1,698 @@
+@font-face {
+    font-family: "aquawax";
+    src: url(http://joci.intuitivecomputers.eu/fonts/Aquawax.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-stretch: narrower;
+
+    overflow-x: hidden;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "aquawax";
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.navbar-background {
+    opacity: 0.75;
+
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    z-index: 999;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background-color: black;
+}
+
+.navbar {
+    opacity: 1;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 50px;
+    z-index: 999;
+
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    #logo {
+        width: 100px;
+        height: 30px;
+        margin-left: 50px;
+
+        background-image: url(../assets/turtle_logo.png);
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 25vw;
+        height: 50px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-shadow: 0 0 20px white;
+        }
+
+    }
+
+    #burger {
+        width: 30px;
+        height: 18px;
+        margin-right: 50px;
+        margin-left: 70px;
+
+        background-image: url(../assets/burger_icon.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+}
+
+#burger-menu {
+    opacity: 0.7;
+
+    display: none;
+
+    justify-content: center;
+    position: fixed;
+    margin-top: 50px;
+    width: 100vw;
+    height: auto;
+
+    z-index: 999;
+
+    background-color: black;
+
+    #burger-links {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a:hover {
+            text-shadow: 0 0 20px white;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    color: #3F95C2;
+
+    p {
+        color: #5a5a5a;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}
+
+.sky {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 50vh;
+    width: 100vw;
+    z-index: -999;
+    background-color: white;
+
+    .intro-text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            margin-top: 50px;
+        }
+    }
+}
+
+.water-background {
+    height: 50vh;
+    width: 100vw;
+    z-index: -899;
+
+    background-image: url(../assets/water_surface_bg.png);
+    background-position: top;
+    background-size: cover;
+}
+
+//application
+
+.intro-screen {
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    color: white;
+}
+
+.intro-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 60vh;
+    width: 60vw;
+
+    z-index: 899;
+}
+
+.rock-left {
+    width: 100vw;
+    height: 100%;
+    z-index: 899;
+
+    background-image: url(../assets/rock_left.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 25vmax;
+}
+
+.rock-right {
+    width: 100vw;
+    height: 100%;
+    z-index: 899;
+
+    background-image: url(../assets/rock_right.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 15vmax;
+}
+
+#intro-twilight {
+    background-image: url(../assets/rock_right.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ocean-container {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 60%, #144085 90%, #3F95C2 100%);
+    width: 100vw;
+    z-index: -999;
+}
+
+.carousel {
+    z-index: 899;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    
+    font-size: 50px;
+}
+
+.slider-text {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 60vh;
+
+    margin: 20px;
+
+    color: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+
+        margin-top: 20px;
+    }
+
+    a:hover {
+        text-shadow: 0 0 20px white;
+    }
+}
+
+.slider-img {
+    width: 30vw;
+    height: 60vh;
+
+    margin: 0 20px 0 20px;
+}
+
+#dolphin {
+    background-image: url(../assets/dolphin.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#jellyfish {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*#submarine-black {
+    z-index: 1;
+    top: 75vh;
+    margin: 0 50% 0 50%;
+    position: fixed;
+    height: auto;
+    width: auto;
+}
+
+#submarine-yellow {
+    z-index: 2;
+    top: 75vh;
+    margin: 0 50% 0 50%;
+    position: fixed;
+    height: auto;
+    width: auto;
+}*/
+
+#submarine-yellow {
+    display: flex;
+    height: 12vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 15vh;
+
+    z-index: 3;
+
+    background-image: url(../assets/submarine_yellow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#submarine-black {
+    display: flex;
+    height: 12vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 15vh;
+
+    z-index: 2;
+
+    background-image: url(../assets/submarine_black.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#scrolly {
+    position: fixed;
+    top: 20%;
+}
+
+@mixin fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+//SEALIFE -------------------------------
+
+.fullscreen-img {
+    #img-1 {
+        @include fullscreen();
+        background-image: url(../assets/turtle_web.jpg);
+    }
+}
+
+.animal-description {
+    color: black;
+    p {
+        color: black;
+    }
+}
+
+//ARTICLES
+
+@mixin good-answer {
+    background-image: url(../assets/pipa_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin wrong-answer {
+    background-image: url(../assets/x_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quiz-container {
+    #topic-trash {
+        background-image: url(../assets/trashinocean.png);
+        background-size: cover;
+    }
+}
+
+.topic-screen {
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    color: white;
+}
+
+.topic-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 60vh;
+    width: 60vw;
+
+    z-index: 899;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    //color:black;
+    background-color: white;
+
+    .question-text {
+        height: auto;
+        width: 60vw;
+        p {
+            color: black;
+        }
+    }
+
+    .answer-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 60vw;
+        height: 30vh;
+        margin: 0;
+
+        .answer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0;
+            width: 15vw;
+            height: 25vh;
+
+            text-align: center;
+            text-decoration: none;
+
+            background-image: url(../assets/circle_icon.png);
+            background-size: 15vh;
+            background-position: bottom 25% center;
+            background-repeat: no-repeat;
+
+            p {
+                line-height: 0;
+                color: black;
+                text-shadow: 0 0 0px black;
+            }
+            
+            //background-color: black;
+
+            #check1 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include good-answer()
+            }
+            #check2 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check3 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check4 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check5 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check6 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include good-answer()
+            }
+            #check7 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check8 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include good-answer()
+            }
+            #check9 {
+                opacity: 0;
+                width: 15vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .slider-content {
+        flex-direction: column;
+    }
+
+    .slider-text {
+        width: 60vw;
+        height: 30vh;
+
+        a {
+            font-size: 15px;
+        }
+    }
+    
+    .slider-img {
+        width: 60vw;
+        height: 30vh;
+    }
+
+    p {
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-family: "aquawax";
+        font-size: 45px;
+        font-weight: 900;
+    }
+
+    #links {
+        a {
+            display: none;
+        }
+    }
+
+    .question-container .answer-container {
+        flex-direction: column;
+        width: 100vw;
+        height: 50vh;
+
+        .answer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 60vw;
+            height: 15vh;
+            margin:0;
+
+            text-align: center;
+            text-decoration: none;
+
+            background-image: url(../assets/circle_icon.png);
+            background-size: 10vh;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+
+            #check1 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include good-answer()
+            }
+            #check2 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check3 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check4 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check5 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check6 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include good-answer()
+            }
+            #check7 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+            #check8 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include good-answer()
+            }
+            #check9 {
+                opacity: 0;
+                width: 60vw;
+                height: 15vh;
+
+                @include wrong-answer()
+            }
+        }
+    }
+}

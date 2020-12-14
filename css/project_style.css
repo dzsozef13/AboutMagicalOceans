@@ -1,0 +1,792 @@
+@font-face {
+  font-family: "aquawax";
+  src: url(http://joci.intuitivecomputers.eu/fonts/Aquawax.ttf);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-stretch: narrower;
+  overflow-x: hidden;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "aquawax";
+  font-size: 75px;
+  font-weight: 900;
+}
+
+.navbar-background {
+  opacity: 0.75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.navbar {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 50px;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar #logo {
+  width: 100px;
+  height: 30px;
+  margin-left: 50px;
+  background-image: url(../assets/turtle_logo.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.navbar #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25vw;
+  height: 50px;
+}
+
+.navbar #links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar #links a:hover {
+  text-shadow: 0 0 20px white;
+}
+
+.navbar #burger {
+  width: 30px;
+  height: 18px;
+  margin-right: 50px;
+  margin-left: 70px;
+  background-image: url(../assets/burger_icon.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#burger-menu {
+  opacity: 0.7;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  margin-top: 50px;
+  width: 100vw;
+  height: auto;
+  z-index: 999;
+  background-color: black;
+}
+
+#burger-menu #burger-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#burger-menu #burger-links a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+#burger-menu #burger-links a:hover {
+  text-shadow: 0 0 20px white;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  color: #3F95C2;
+}
+
+.header p {
+  color: #5a5a5a;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.sky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  z-index: -999;
+  background-color: white;
+}
+
+.sky .intro-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sky .intro-text-container h3 {
+  margin-top: 50px;
+}
+
+.water-background {
+  height: 50vh;
+  width: 100vw;
+  z-index: -899;
+  background-image: url(../assets/water_surface_bg.png);
+  background-position: top;
+  background-size: cover;
+}
+
+.intro-screen {
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.intro-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vh;
+  width: 60vw;
+  z-index: 899;
+}
+
+.rock-left {
+  width: 100vw;
+  height: 100%;
+  z-index: 899;
+  background-image: url(../assets/rock_left.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 25vmax;
+}
+
+.rock-right {
+  width: 100vw;
+  height: 100%;
+  z-index: 899;
+  background-image: url(../assets/rock_right.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 15vmax;
+}
+
+#intro-twilight {
+  background-image: url(../assets/rock_right.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ocean-container {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, black), color-stop(90%, #144085), to(#3F95C2));
+  background: linear-gradient(0deg, black 60%, #144085 90%, #3F95C2 100%);
+  width: 100vw;
+  z-index: -999;
+}
+
+.carousel {
+  z-index: 899;
+}
+
+.slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 50px;
+}
+
+.slider-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30vw;
+  height: 60vh;
+  margin: 20px;
+  color: white;
+}
+
+.slider-text a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.slider-text a:hover {
+  text-shadow: 0 0 20px white;
+}
+
+.slider-img {
+  width: 30vw;
+  height: 60vh;
+  margin: 0 20px 0 20px;
+}
+
+#dolphin {
+  background-image: url(../assets/dolphin.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#jellyfish {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*#submarine-black {
+    z-index: 1;
+    top: 75vh;
+    margin: 0 50% 0 50%;
+    position: fixed;
+    height: auto;
+    width: auto;
+}
+
+#submarine-yellow {
+    z-index: 2;
+    top: 75vh;
+    margin: 0 50% 0 50%;
+    position: fixed;
+    height: auto;
+    width: auto;
+}*/
+#submarine-yellow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 12vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 15vh;
+  z-index: 3;
+  background-image: url(../assets/submarine_yellow.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#submarine-black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 12vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 15vh;
+  z-index: 2;
+  background-image: url(../assets/submarine_black.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#scrolly {
+  position: fixed;
+  top: 20%;
+}
+
+.fullscreen-img #img-1 {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/turtle_web.jpg);
+}
+
+.animal-description {
+  color: black;
+}
+
+.animal-description p {
+  color: black;
+}
+
+.quiz-container #topic-trash {
+  background-image: url(../assets/trashinocean.png);
+  background-size: cover;
+}
+
+.topic-screen {
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.topic-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vh;
+  width: 60vw;
+  z-index: 899;
+}
+
+.question-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.question-container .question-text {
+  height: auto;
+  width: 60vw;
+}
+
+.question-container .question-text p {
+  color: black;
+}
+
+.question-container .answer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60vw;
+  height: 30vh;
+  margin: 0;
+}
+
+.question-container .answer-container .answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  width: 15vw;
+  height: 25vh;
+  text-align: center;
+  text-decoration: none;
+  background-image: url(../assets/circle_icon.png);
+  background-size: 15vh;
+  background-position: bottom 25% center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer p {
+  line-height: 0;
+  color: black;
+  text-shadow: 0 0 0px black;
+}
+
+.question-container .answer-container .answer #check1 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/pipa_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check2 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/x_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check3 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/x_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check4 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/x_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check5 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/x_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check6 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/pipa_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check7 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/x_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check8 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/pipa_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.question-container .answer-container .answer #check9 {
+  opacity: 0;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../assets/x_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 740px) {
+  .slider-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider-text {
+    width: 60vw;
+    height: 30vh;
+  }
+  .slider-text a {
+    font-size: 15px;
+  }
+  .slider-img {
+    width: 60vw;
+    height: 30vh;
+  }
+  p {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  h3 {
+    font-family: "aquawax";
+    font-size: 45px;
+    font-weight: 900;
+  }
+  #links a {
+    display: none;
+  }
+  .question-container .answer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+  }
+  .question-container .answer-container .answer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60vw;
+    height: 15vh;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    background-image: url(../assets/circle_icon.png);
+    background-size: 10vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check1 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/pipa_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check2 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/x_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check3 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/x_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check4 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/x_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check5 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/x_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check6 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/pipa_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check7 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/x_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check8 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/pipa_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .question-container .answer-container .answer #check9 {
+    opacity: 0;
+    width: 60vw;
+    height: 15vh;
+    background-image: url(../assets/x_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=project_style.css.map */
