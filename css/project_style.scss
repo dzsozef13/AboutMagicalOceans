@@ -388,13 +388,14 @@ h3 {
         .sPics {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
+            grid-gap: 2rem;
 
             @media (max-width: 576px) {
                 grid-template-columns: repeat(1, 1fr);
             }
 
             .pic {
+                border-radius: 15px;
                 position: relative;
                 min-height: 220px;
                 max-width: 600px;
