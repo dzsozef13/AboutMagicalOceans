@@ -195,8 +195,6 @@ h3 {
     background-size: cover;
 }
 
-//application
-
 .intro-screen {
     z-index: 4;
 
@@ -318,24 +316,6 @@ h3 {
     background-repeat: no-repeat;
 }
 
-/*#submarine-black {
-    z-index: 1;
-    top: 75vh;
-    margin: 0 50% 0 50%;
-    position: fixed;
-    height: auto;
-    width: auto;
-}
-
-#submarine-yellow {
-    z-index: 2;
-    top: 75vh;
-    margin: 0 50% 0 50%;
-    position: fixed;
-    height: auto;
-    width: auto;
-}*/
-
 #submarine-yellow {
     display: flex;
     height: 12vh;
@@ -394,7 +374,7 @@ h3 {
     }
 }
 
-//ARTICLES
+//ARTICLES---------------------------------------------
 
 @mixin good-answer {
     background-image: url(../assets/pipa_icon.png);
@@ -451,7 +431,6 @@ h3 {
     width: 100vw;
     height: 100vh;
 
-    //color:black;
     background-color: white;
 
     .question-text {
@@ -496,8 +475,6 @@ h3 {
                 text-shadow: 0 0 0px black;
             }
             
-            //background-color: black;
-
             #check1 {
                 opacity: 0;
                 width: 15vw;
@@ -564,6 +541,57 @@ h3 {
         }
     }
 }
+
+#aboutus {
+    background: linear-gradient(0deg, #FFB545 20%, #F9D548 80%);
+}
+
+.aboutus-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80vw;
+    height: auto;
+
+    .profile-card {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: 30vh;
+        margin-top: 50px;
+
+
+        .aboutus-text {
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+            height: 200px;
+
+            p {
+                font-size: 25px;
+                color: black;
+            }
+            .sig {
+                height: 100px;
+                background-color: cornflowerblue;
+            }   
+        }
+        .profile {
+            width: 300px;
+            height: 300px;
+
+            background-image: url(../assets/profile_joci.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+//MOBILE VERSION CHANGES ------------------------------
 
 @media (max-width: 740px) {
     .slider-content {
@@ -692,6 +720,56 @@ h3 {
                 height: 15vh;
 
                 @include wrong-answer()
+            }
+        }
+    }
+
+    .aboutus-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 60vw;
+    
+        .profile-card {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 40vw;
+            margin-top: 50px;
+    
+    
+            .aboutus-text {
+                display: flex;
+                flex-direction: column;
+                height: 200px;
+                width: 40vw;
+                align-items: center;
+
+                text-align: center;
+    
+                p {
+                    font-size: 15px;
+                    color: black;
+                    margin: 0;
+                    width: 40vw;
+                }
+                .sig {
+                    height: 50px;
+                    width: 30vw;
+                    background-color: cornflowerblue;
+                }   
+            }
+            .profile {
+                width: 200px;
+                height: 400px;
+    
+                background-image: url(../assets/profile_joci.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
     }
