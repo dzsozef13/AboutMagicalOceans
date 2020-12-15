@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--Style-->
+    <link rel="stylesheet" href="../css/project_style.css">
+
+</head>
+
+<body>
+
+    <div class="navbar-background"></div>
+
+    <div class="navbar">
+        <a id="logo" href="../project_index.html"></a>
+        <div id="links">
+            <a href="../sealife.html">Sealife</a>
+            <a href="../quiz.html">Articles</a>
+            <a href="">About</a>
+        </div>
+        <a id="burger" href="javascript:void(0);" class="icon" onclick="burgerButton()"></a>
+    </div>
+
+    <div id="burger-menu">
+        <div id="burger-links">
+            <a href="../sealife.html">Sealife</a>
+            <a href="../quiz.html">Articles</a>
+            <a href="">About</a>
+        </div>
+    </div>
+
+    <script>
+        function burgerButton() {
+            var x = document.getElementById("burger-menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+    <div class="subsite">
+        <div id="whitespace"></div>
+        <div id="sub">
+            <a href="../sealife.html"><button id="returnBtn">Return</button></a>
+            <hr>
+            <div id="subText"><h1>Irrawaddy Dolphin</h1>
+            <p style="color: black;">Found near the coastal areas of South / Southeast Asia, this little Cetacean is one of the smaller in its family and found typically in groups of 2-6 individuals. 
+                Known for eating a variety of fish, depending where you find them, while also being seen close to fishermen where they are accepting discarded fish from the fisherman's haul. This relationship with fishermen caused increased tourism, but without a downside.
+                Sharks are considered their natural enemies, but the Irrawaddy Dolphins are fairly susceptible to human intervention. Areas with dense human habitation and agricultural industrialization pollutes the nearby waters, and increased fishing are reasons for Irrawaddy Dolphins dwindling, resulting in less than 100 left in the wild.</p>
+            </div>
+        </div>
+    </div>
+</body>
