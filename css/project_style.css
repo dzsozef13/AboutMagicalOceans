@@ -363,23 +363,6 @@ h3 {
   background-repeat: no-repeat;
 }
 
-/*#submarine-black {
-    z-index: 1;
-    top: 75vh;
-    margin: 0 50% 0 50%;
-    position: fixed;
-    height: auto;
-    width: auto;
-}
-
-#submarine-yellow {
-    z-index: 2;
-    top: 75vh;
-    margin: 0 50% 0 50%;
-    position: fixed;
-    height: auto;
-    width: auto;
-}*/
 #submarine-yellow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,6 +854,73 @@ h3 {
   background-repeat: no-repeat;
 }
 
+#aboutus {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #FFB545), color-stop(80%, #F9D548));
+  background: linear-gradient(0deg, #FFB545 20%, #F9D548 80%);
+}
+
+.aboutus-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  height: auto;
+}
+
+.aboutus-column .profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+  margin-top: 50px;
+}
+
+.aboutus-column .profile-card .aboutus-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20vw;
+  height: 200px;
+}
+
+.aboutus-column .profile-card .aboutus-text p {
+  font-size: 25px;
+  color: black;
+}
+
+.aboutus-column .profile-card .aboutus-text .sig {
+  height: 100px;
+  background-color: cornflowerblue;
+}
+
+.aboutus-column .profile-card .profile {
+  width: 300px;
+  height: 300px;
+  background-image: url(../assets/profile_joci.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 740px) {
   .slider-content {
     -webkit-box-orient: vertical;
@@ -1018,6 +1068,69 @@ h3 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  .aboutus-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60vw;
+  }
+  .aboutus-column .profile-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40vw;
+    margin-top: 50px;
+  }
+  .aboutus-column .profile-card .aboutus-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 200px;
+    width: 40vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .aboutus-column .profile-card .aboutus-text p {
+    font-size: 15px;
+    color: black;
+    margin: 0;
+    width: 40vw;
+  }
+  .aboutus-column .profile-card .aboutus-text .sig {
+    height: 50px;
+    width: 30vw;
+    background-color: cornflowerblue;
+  }
+  .aboutus-column .profile-card .profile {
+    width: 200px;
+    height: 400px;
+    background-image: url(../assets/profile_joci.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 /*# sourceMappingURL=project_style.css.map */

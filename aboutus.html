@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!--Style-->
+    <link rel="stylesheet" href="css/project_style.css">
+
+</head>
+<body>
+
+    <div class="navbar-background"></div>
+
+    <div class="navbar">
+        <a id="logo" href="project_index.html"></a>
+        <div id="links">
+            <a href="sealife.html">Sealife</a>
+            <a href="quiz.html">Articles</a>
+            <a href="aboutus.html">Creators</a>
+        </div>
+        <a id="burger" href="javascript:void(0);" class="icon" onclick="burgerButton()"></a>
+    </div>
+    
+    <div id="burger-menu">
+        <div id="burger-links">
+            <a href="sealife.html">Sealife</a>
+            <a href="quiz.html">Articles</a>
+            <a href="aboutus.html">Creators</a>
+        </div>
+    </div>
+    
+    <script>
+        function burgerButton() {
+          var x = document.getElementById("burger-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+<div id="aboutus" class="intro-screen">
+    <div class="aboutus-column">
+
+        <div class="profile-card">
+            <div id="bendi" class="profile"></div>
+            <div class="aboutus-text">
+                <p>Bendegúz Kiss</p>
+                <div id="bendi-sig" class="sig"></div>
+            </div>
+        </div>
+        
+        
+        <div class="profile-card">
+            <div id="jake" class="profile"></div>
+            <div class="aboutus-text">
+                <p>Jacob Holm Olesen</p>
+                <div id="jake-sig" class="sig"></div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="aboutus-column">
+        <div class="profile-card">
+            <div id="joci" class="profile"></div>
+            <div class="aboutus-text">
+                <p>József Ádám Punk</p>
+                <div id="joci-sig" class="sig"></div>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <div id="laura" class="profile"></div>
+            <div class="aboutus-text">
+                <p>Laura Augustyte</p>
+                <div id="laura-sig" class="sig"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+</body>
