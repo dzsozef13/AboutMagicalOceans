@@ -11,6 +11,9 @@ body {
     font-stretch: narrower;
 
     overflow-x: hidden;
+    #links a {
+        padding: 0 10px;
+    }
 }
 
 p {
