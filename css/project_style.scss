@@ -7,7 +7,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-stretch: narrower;
 
     overflow-x: hidden;
@@ -43,7 +43,7 @@ h3 {
     position: fixed;
     top: 0;
     left: 0;
-
+    
     background-color: black;
 }
 
@@ -95,6 +95,7 @@ h3 {
         a:hover {
             text-shadow: 0 0 20px white;
         }
+
     }
 
     #burger {
@@ -108,6 +109,7 @@ h3 {
         background-position: bottom;
         background-repeat: no-repeat;
     }
+
 }
 
 #burger-menu {
@@ -152,12 +154,15 @@ h3 {
     height: 100vh;
     width: 100vw;
 
-    color: #3f95c2;
+    color: #3F95C2;
 
     p {
-        color: #5a5a5a;
-        font-weight: 500;
+        opacity: 0;
+        color: white;
+        font-weight: 300;
         line-height: 150%;
+        position: absolute;
+        margin-top: 15vh;
     }
 }
 
@@ -180,6 +185,7 @@ h3 {
         h3 {
             margin-top: 50px;
         }
+        
     }
 }
 
@@ -248,7 +254,7 @@ h3 {
 }
 
 .ocean-container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, #144085 90%, #3f95c2 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 60%, #144085 90%, #3F95C2 100%);
     width: 100vw;
     z-index: -999;
 }
@@ -265,7 +271,7 @@ h3 {
 
     height: 100vh;
     width: 100vw;
-
+    
     font-size: 50px;
 }
 
@@ -300,19 +306,113 @@ h3 {
     margin: 0 20px 0 20px;
 }
 
-#dolphin {
+#item01 {
     background-image: url(../assets/dolphin.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#jellyfish {
+#item02 {
     background-image: url(../assets/jellyfish.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#item03 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item04 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item05 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item06 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item07 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item08 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item09 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item10 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item11 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item12 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item13 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item14 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item15 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 
 #submarine-yellow {
     display: flex;
@@ -356,181 +456,9 @@ h3 {
     background-position: center;
 }
 
-//SEALIFE START-------------------------------
-#pageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vw;
-    #whitespace {
-        height: 100px;
-    }
-    .sHeadline {
-        margin: 0 auto !important;
-        text-align: center;
-        h1 {
-            background-color: turquoise;
-            border-radius: 10px;
-        }
-        p {
-            background-color: yellow;
-            border-radius: 5px;
-        }
-    }
+//SEALIFE -------------------------------
 
-    .sPicsContainer {
-        padding: 0 50px;
-        margin: auto;
-        .sPics {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
-
-            @media (max-width: 576px) {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .pic {
-                position: relative;
-                min-height: 220px;
-                max-width: 600px;
-                background-size: 100% 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: solid 2px black;
-                overflow: hidden;
-
-                #picBg {
-                    height: 100%;
-                    width: 100%;
-                    transition: 0.5s ease-in-out;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    a {
-                        text-decoration: none;
-                    }
-
-                    &:hover {
-                        backdrop-filter: blur(5px);
-                    }
-                    h3 {
-                        color: white;
-                        text-align: center;
-                        position: absolute;
-                        transition: 0.5s ease-in-out;
-                    }
-                    p {
-                        padding: 15px;
-                        opacity: 0;
-                        visibility: hidden;
-                        transition: 0.5s ease-in-out;
-                        @media (max-width: 576px) {
-                            font-size: 11px !important;
-                        }
-                        @media (max-width: 768px) {
-                            font-size: 16px;
-                        }
-                    }
-                    &:hover {
-                        h3 {
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        p {
-                            opacity: 1;
-                            visibility: visible;
-                        }
-                    }
-                }
-            }
-            #pic1 {
-                background-image: url(../assets/Abyssal-Grenadier.jpg);
-            }
-            #pic2 {
-                background-image: url(../assets/Amphipod.jpg);
-            }
-            #pic3 {
-                background-image: url(../assets/belugawhale.jpg);
-            }
-            #pic4 {
-                background-image: url(../assets/BlackDragonfish.jpg);
-            }
-            #pic5 {
-                background-image: url(../assets/bluefin-tuna.jpg);
-            }
-            #pic6 {
-                background-image: url(../assets/Chimaera.jpg);
-            }
-            #pic7 {
-                background-image: url(../assets/crossotamilsae.jpg);
-            }
-            #pic8 {
-                background-image: url(../assets/cuskeel.jpg);
-            }
-            #pic9 {
-                background-image: url(../assets/GreatAuk.jpg);
-            }
-            #pic10 {
-                background-image: url(../assets/Hawksbillturtle.jpg);
-            }
-            #pic11 {
-                background-image: url(../assets/IrrawaddyDolphin.jpg);
-            }
-            #pic12 {
-                background-image: url(../assets/LeatherbackTurtle.jpg);
-            }
-            #pic13 {
-                background-image: url(../assets/NewZealandGreyling.jpg);
-            }
-            #pic14 {
-                background-image: url(../assets/snailfish.png);
-            }
-            #pic15 {
-                background-image: url(../assets/strawberrysquid.jpg);
-            }
-            #pic16 {
-                background-image: url(../assets/Triplewartseadevil.jpg);
-            }
-            #pic17 {
-                background-image: url(../assets/va.jpg);
-            }
-        }
-    }
-}
-
-.subsite {
-    #sub {
-        padding: 100px;
-        background-image: url(../assets/bluefin-tuna.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        #returnBtn {
-            border-radius: 0x;
-            clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-            background-color: blue;
-            border: 2px solid black;
-            color: white;
-            padding: 10px;
-            padding-left: 15px;
-            padding-right: 5px !important;
-        }
-        #subText {
-            background: linear-gradient(to right, rgba(173, 216, 230, 0.438), rgba(0, 128, 128, 0.479));
-            border-radius: 5px;
-            padding: 15px;
-        }
-    }
-}
-//SEALIFE END-------------------------------
-
-/* .fullscreen-img {
+.fullscreen-img {
     #img-1 {
         @include fullscreen();
         background-image: url(../assets/turtle_web.jpg);
@@ -542,7 +470,7 @@ h3 {
     p {
         color: black;
     }
-} */
+}
 
 //ARTICLES---------------------------------------------
 
@@ -650,63 +578,63 @@ h3 {
                 width: 15vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check2 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check3 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check4 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check5 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check6 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check7 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check8 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check9 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
         }
     }
@@ -747,7 +675,9 @@ h3 {
             }
             .sig {
                 height: 100px;
-                background-color: cornflowerblue;
+                background-image: url(../assets/sig_joci.png);
+                background-size: contain;
+                background-repeat: no-repeat;
             }   
         }
         .profile {
@@ -776,7 +706,7 @@ h3 {
             font-size: 15px;
         }
     }
-
+    
     .slider-img {
         width: 60vw;
         height: 30vh;
@@ -787,7 +717,7 @@ h3 {
         font-size: 15px;
         font-weight: 300;
     }
-
+    
     h1 {
         font-size: 30px;
         font-weight: 700;
@@ -818,7 +748,7 @@ h3 {
 
             width: 60vw;
             height: 15vh;
-            margin: 0;
+            margin:0;
 
             text-align: center;
             text-decoration: none;
@@ -833,63 +763,63 @@ h3 {
                 width: 60vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check2 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check3 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check4 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check5 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check6 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check7 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check8 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check9 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
         }
     }
@@ -929,7 +859,6 @@ h3 {
                 .sig {
                     height: 50px;
                     width: 30vw;
-                    background-color: cornflowerblue;
                 }   
             }
             .profile {
