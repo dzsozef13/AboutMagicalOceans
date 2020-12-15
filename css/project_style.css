@@ -7,7 +7,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-stretch: narrower;
   overflow-x: hidden;
 }
@@ -170,13 +170,16 @@ h3 {
   text-align: center;
   height: 100vh;
   width: 100vw;
-  color: #3f95c2;
+  color: #3F95C2;
 }
 
 .header p {
-  color: #5a5a5a;
-  font-weight: 500;
+  opacity: 0;
+  color: white;
+  font-weight: 300;
   line-height: 150%;
+  position: absolute;
+  margin-top: 15vh;
 }
 
 .sky {
@@ -288,8 +291,8 @@ h3 {
 }
 
 .ocean-container {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, black), color-stop(90%, #144085), to(#3f95c2));
-  background: linear-gradient(0deg, black 60%, #144085 90%, #3f95c2 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, black), color-stop(90%, #144085), to(#3F95C2));
+  background: linear-gradient(0deg, black 60%, #144085 90%, #3F95C2 100%);
   width: 100vw;
   z-index: -999;
 }
@@ -349,14 +352,105 @@ h3 {
   margin: 0 20px 0 20px;
 }
 
-#dolphin {
+#item01 {
   background-image: url(../assets/dolphin.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#jellyfish {
+#item02 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item03 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item04 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item05 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item06 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item07 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item08 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item09 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item10 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item11 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item12 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item13 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item14 {
+  background-image: url(../assets/jellyfish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#item15 {
   background-image: url(../assets/jellyfish.png);
   background-position: center;
   background-size: contain;
@@ -914,7 +1008,9 @@ h3 {
 
 .aboutus-column .profile-card .aboutus-text .sig {
   height: 100px;
-  background-color: cornflowerblue;
+  background-image: url(../assets/sig_joci.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .aboutus-column .profile-card .profile {
@@ -1126,7 +1222,6 @@ h3 {
   .aboutus-column .profile-card .aboutus-text .sig {
     height: 50px;
     width: 30vw;
-    background-color: cornflowerblue;
   }
   .aboutus-column .profile-card .profile {
     width: 200px;

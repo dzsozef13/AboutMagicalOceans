@@ -7,7 +7,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-stretch: narrower;
 
     overflow-x: hidden;
@@ -43,7 +43,7 @@ h3 {
     position: fixed;
     top: 0;
     left: 0;
-
+    
     background-color: black;
 }
 
@@ -95,6 +95,7 @@ h3 {
         a:hover {
             text-shadow: 0 0 20px white;
         }
+
     }
 
     #burger {
@@ -108,6 +109,7 @@ h3 {
         background-position: bottom;
         background-repeat: no-repeat;
     }
+
 }
 
 #burger-menu {
@@ -152,12 +154,15 @@ h3 {
     height: 100vh;
     width: 100vw;
 
-    color: #3f95c2;
+    color: #3F95C2;
 
     p {
-        color: #5a5a5a;
-        font-weight: 500;
+        opacity: 0;
+        color: white;
+        font-weight: 300;
         line-height: 150%;
+        position: absolute;
+        margin-top: 15vh;
     }
 }
 
@@ -180,6 +185,7 @@ h3 {
         h3 {
             margin-top: 50px;
         }
+        
     }
 }
 
@@ -248,7 +254,7 @@ h3 {
 }
 
 .ocean-container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, #144085 90%, #3f95c2 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 60%, #144085 90%, #3F95C2 100%);
     width: 100vw;
     z-index: -999;
 }
@@ -265,7 +271,7 @@ h3 {
 
     height: 100vh;
     width: 100vw;
-
+    
     font-size: 50px;
 }
 
@@ -300,19 +306,113 @@ h3 {
     margin: 0 20px 0 20px;
 }
 
-#dolphin {
+#item01 {
     background-image: url(../assets/dolphin.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#jellyfish {
+#item02 {
     background-image: url(../assets/jellyfish.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#item03 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item04 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item05 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item06 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item07 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item08 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item09 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item10 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item11 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item12 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item13 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item14 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#item15 {
+    background-image: url(../assets/jellyfish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 
 #submarine-yellow {
     display: flex;
@@ -356,7 +456,7 @@ h3 {
     background-position: center;
 }
 
-//SEALIFE START-------------------------------
+//SEALIFE -------------------------------
 #pageContainer {
     background: linear-gradient(lightblue, rgb(52, 126, 151), rgb(27, 92, 231));
 
@@ -654,63 +754,63 @@ h3 {
                 width: 15vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check2 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check3 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check4 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check5 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check6 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check7 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check8 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check9 {
                 opacity: 0;
                 width: 15vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
         }
     }
@@ -751,7 +851,9 @@ h3 {
             }
             .sig {
                 height: 100px;
-                background-color: cornflowerblue;
+                background-image: url(../assets/sig_joci.png);
+                background-size: contain;
+                background-repeat: no-repeat;
             }   
         }
         .profile {
@@ -780,7 +882,7 @@ h3 {
             font-size: 15px;
         }
     }
-
+    
     .slider-img {
         width: 60vw;
         height: 30vh;
@@ -791,7 +893,7 @@ h3 {
         font-size: 15px;
         font-weight: 300;
     }
-
+    
     h1 {
         font-size: 30px;
         font-weight: 700;
@@ -822,7 +924,7 @@ h3 {
 
             width: 60vw;
             height: 15vh;
-            margin: 0;
+            margin:0;
 
             text-align: center;
             text-decoration: none;
@@ -837,63 +939,63 @@ h3 {
                 width: 60vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check2 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check3 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check4 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check5 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check6 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check7 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
             #check8 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include good-answer();
+                @include good-answer()
             }
             #check9 {
                 opacity: 0;
                 width: 60vw;
                 height: 15vh;
 
-                @include wrong-answer();
+                @include wrong-answer()
             }
         }
     }
@@ -933,7 +1035,6 @@ h3 {
                 .sig {
                     height: 50px;
                     width: 30vw;
-                    background-color: cornflowerblue;
                 }   
             }
             .profile {
