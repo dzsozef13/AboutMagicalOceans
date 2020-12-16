@@ -19,7 +19,6 @@ body {
     width: 100vw;
     margin: 0;
     font-family: "Rubik", sans-serif;
-    font-stretch: narrower;
 
     overflow-x: hidden;
     #links a {
@@ -320,6 +319,13 @@ h3 {
     height: 60vh;
 
     margin: 0 20px 0 20px;
+}
+
+#item01 {
+    background-image: url(../assets/dolphin.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #item02 {
