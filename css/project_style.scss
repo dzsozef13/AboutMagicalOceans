@@ -173,10 +173,10 @@ h3 {
     color: #3f95c2;
 
     p {
-        opacity: 0;
-        color: white;
-        font-weight: 300;
-        line-height: 150%;
+        opacity: 1;
+        color: #FFB545;
+        font-weight: 500;
+        line-height: 0;
         position: absolute;
         margin-top: 15vh;
     }
@@ -242,7 +242,8 @@ h3 {
 .rock-left {
     width: 100vw;
     height: 100%;
-    z-index: 899;
+    z-index: 699;
+    margin-top: -300px;
 
     background-image: url(../assets/rock_left.png);
     background-position: bottom left;
@@ -253,7 +254,8 @@ h3 {
 .rock-right {
     width: 100vw;
     height: 100%;
-    z-index: 899;
+    z-index: 699;
+    margin-top: -700px;
 
     background-image: url(../assets/rock_right.png);
     background-position: bottom right;
