@@ -958,6 +958,16 @@ h3 {
   background-size: cover;
 }
 
+.quiz-container #topic-energy {
+  background-image: url(../assets/wave_background.png);
+  background-size: cover;
+}
+
+.quiz-container #topic-cleaning {
+  background-image: url(../assets/cleanup_background.png);
+  background-size: cover;
+}
+
 .topic-screen {
   z-index: 4;
   display: -webkit-box;
