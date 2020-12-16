@@ -1228,17 +1228,48 @@ h3 {
 
 .aboutus-column .profile-card .aboutus-text .sig {
   height: 100px;
-  background-image: url(../assets/sig_joci.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutus-column .profile-card .aboutus-text #laura-sig {
+  background-image: url(../assets/sig_laura.png);
+}
+
+.aboutus-column .profile-card .aboutus-text #jake-sig {
+  background-image: url(../assets/sig_jake.png);
+}
+
+.aboutus-column .profile-card .aboutus-text #joci-sig {
+  background-image: url(../assets/sig_joci.png);
+}
+
+.aboutus-column .profile-card .aboutus-text #bendi-sig {
+  background-image: url(../assets/sig_bendi.png);
 }
 
 .aboutus-column .profile-card .profile {
   width: 300px;
   height: 300px;
-  background-image: url(../assets/profile_joci.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.aboutus-column .profile-card #plaura {
+  background-image: url(../assets/profile_laura.png);
+}
+
+.aboutus-column .profile-card #pjoci {
+  background-image: url(../assets/profile_joci.png);
+}
+
+.aboutus-column .profile-card #pjake {
+  background-image: url(../assets/profile_jake.png);
+}
+
+.aboutus-column .profile-card #pbendi {
+  background-image: url(../assets/profile_bendi.png);
 }
 
 @media (max-width: 768px) {
@@ -1447,6 +1478,9 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
   .aboutus-column .profile-card .aboutus-text p {

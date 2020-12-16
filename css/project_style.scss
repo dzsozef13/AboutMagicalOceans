@@ -981,18 +981,41 @@ h3 {
             }
             .sig {
                 height: 100px;
-                background-image: url(../assets/sig_joci.png);
                 background-size: contain;
                 background-repeat: no-repeat;
+                background-position: center;
+            }
+            #laura-sig {
+                background-image: url(../assets/sig_laura.png);
+            }
+            #jake-sig {
+                background-image: url(../assets/sig_jake.png);
+            }
+            #joci-sig {
+                background-image: url(../assets/sig_joci.png);
+            }
+            #bendi-sig {
+                background-image: url(../assets/sig_bendi.png);
             }
         }
         .profile {
             width: 300px;
             height: 300px;
 
-            background-image: url(../assets/profile_joci.png);
             background-size: contain;
             background-repeat: no-repeat;
+        }
+        #plaura {
+            background-image: url(../assets/profile_laura.png);
+        }
+        #pjoci {
+            background-image: url(../assets/profile_joci.png);
+        }
+        #pjake {
+            background-image: url(../assets/profile_jake.png);
+        }
+        #pbendi {
+            background-image: url(../assets/profile_bendi.png);
         }
     }
 }
@@ -1165,7 +1188,7 @@ h3 {
                 height: 200px;
                 width: 40vw;
                 align-items: center;
-
+                justify-content: center;
                 text-align: center;
 
                 p {
