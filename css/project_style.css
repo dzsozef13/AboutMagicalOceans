@@ -578,14 +578,14 @@ h3 {
 }
 
 #pageContainer .sHeadline h1 {
-  background-color: turquoise;
   border-radius: 10px;
   -webkit-animation: smooth 0.5s ease-in-out;
           animation: smooth 0.5s ease-in-out;
 }
 
 #pageContainer .sHeadline p {
-  background-color: yellow;
+  font-weight: bold;
+  padding: 25px;
   border-radius: 5px;
   -webkit-animation: smooth 1s ease-in-out;
           animation: smooth 1s ease-in-out;
@@ -780,7 +780,7 @@ h3 {
 #pageContainer .sPicsContainer .sPics #pic14 {
   -webkit-animation: smooth 3.6s ease-in-out;
           animation: smooth 3.6s ease-in-out;
-  background-image: url(../assets/snailfish.png);
+  background-image: url(../assets/marianasnailfish.png);
 }
 
 #pageContainer .sPicsContainer .sPics #pic15 {

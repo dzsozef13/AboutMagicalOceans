@@ -502,12 +502,12 @@ h3 {
         margin: 0 auto !important;
         text-align: center;
         h1 {
-            background-color: turquoise;
             border-radius: 10px;
             animation: smooth 0.5s ease-in-out;
         }
         p {
-            background-color: yellow;
+            font-weight: bold;
+            padding: 25px;
             border-radius: 5px;
             animation: smooth 1s ease-in-out;
         }
@@ -638,7 +638,7 @@ h3 {
             }
             #pic14 {
                 animation: smooth 3.6s ease-in-out;
-                background-image: url(../assets/snailfish.png);
+                background-image: url(../assets/marianasnailfish.png);
             }
             #pic15 {
                 animation: smooth 3.8s ease-in-out;
