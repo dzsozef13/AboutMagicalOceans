@@ -1442,6 +1442,10 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
   }
+  .topic-screen {
+    height: 150vh;
+    width: 100vw;
+  }
   .aboutus-column {
     display: -webkit-box;
     display: -ms-flexbox;
