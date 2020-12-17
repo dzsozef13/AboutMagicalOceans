@@ -191,16 +191,24 @@ h3 {
     height: 50vh;
     width: 100vw;
     z-index: -999;
-    background-color: white;
+    background-image: url(../assets/title_bg.png);
+    background-position: center;
+    background-size: cover;
 
     .intro-text-container {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        h3 {
-            margin-top: 50px;
-        }
+        #title-img {
+            margin-top: 45px;
+            width: 80vw;
+            height: 30vh;
+            background-image: url(../assets/title_img.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        } 
     }
 }
 
