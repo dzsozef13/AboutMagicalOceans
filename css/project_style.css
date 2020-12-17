@@ -56,7 +56,7 @@ h1 {
 
 h3 {
   font-family: "Rubik", sans-serif;
-  font-size: 75px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -1305,9 +1305,9 @@ h3 {
     font-weight: 700;
   }
   h3 {
-    font-family: "aquawax";
-    font-size: 45px;
-    font-weight: 900;
+    font-family: "Rubik", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
   }
   .question-container .answer-container {
     -webkit-box-orient: vertical;
